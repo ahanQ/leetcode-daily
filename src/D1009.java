@@ -6,9 +6,10 @@
  */
 public class D1009 {
     public static void main(String[] args) {
-        System.out.println(new D1009().new Solution().bitwiseComplement(10));
+        System.out.println(new Solution().bitwiseComplement(10));
     }
 
+    static
     class Solution {
         public int bitwiseComplement(int N) {
             if (N == 0) {

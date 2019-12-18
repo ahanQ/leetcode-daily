@@ -5,14 +5,16 @@
 public class D1128 {
     public static void main(String[] args) {
         int[][] dominoes = {{1,2}};
-        System.out.println(new D1128().new Solution().numEquivDominoPairs(dominoes));
+        System.out.println(new Solution().numEquivDominoPairs(dominoes));
     }
+
+    static
     class Solution {
         public int numEquivDominoPairs(int[][] dominoes) {
             int[] cache = new int[dominoes.length];
             int sum = 0;
-            for(int i = 0; i < dominoes.length - 1; i++) {
-                if(cache[i] != 0) {
+            for (int i = 0; i < dominoes.length - 1; i++) {
+                if (cache[i] != 0) {
                     continue;
                 }
                 cache[i] = 1;
